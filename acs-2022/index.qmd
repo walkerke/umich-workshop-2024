@@ -102,7 +102,7 @@ options(tigris_use_cache = TRUE)
 
 * RStudio: integrated development environment (IDE) for R developed by [Posit](https://posit.co/)
 
-* Posit Cloud: run RStudio with today's workshop pre-configured at https://posit.cloud/content/5377428
+* Posit Cloud: run RStudio with today's workshop pre-configured at https://posit.cloud/content/7549022
 
 
 ## Getting started with tidycensus
@@ -118,8 +118,7 @@ install.packages(c("tidycensus", "tidyverse"))
 * Optional, to run advanced examples:
 
 ```{r advanced-packages, eval = FALSE}
-install.packages(c("mapview", "plotly", "ggiraph", 
-                   "survey", "srvyr"))
+install.packages(c("mapview", "survey", "srvyr"))
 ```
 
 
@@ -217,9 +216,8 @@ income_table
 
 ## US Census Geography
 
-<img src=img/census_diagram.png style="width: 500px">
+![Source: US Census Bureau](img/census_diagram.png)
 
-.footnote[Source: [US Census Bureau](https://www2.census.gov/geo/pdfs/reference/geodiagram.pdf)]
 
 ---
 
@@ -227,7 +225,7 @@ income_table
 
 * Information on available geographies, and how to specify them, can be found [in the tidycensus documentation](https://walker-data.com/tidycensus/articles/basic-usage.html#geography-in-tidycensus-1)
 
-<img src=img/tidycensus_geographies.png style="width: 650px">
+![](img/tidycensus_geographies.png)
 
 
 ---
@@ -303,13 +301,13 @@ class: middle, center, inverse
 
 :::: {.columns}
 
-::: {.column width = "40%"}
+::: {.column width="40%"}
 
 * The default data structure returned by __tidycensus__ is "tidy" or long-form data, with variables by geography stacked by row
 
 :::
 
-::: {.column width = "60%"}
+::: {.column width="60%"}
 
 
 ```{r tidy-data}
@@ -338,13 +336,13 @@ age_sex_table
 
 :::: {.columns}
 
-::: {.column width = "40%"}
+::: {.column width="40%"}
 
 * The argument `output = "wide"` spreads Census variables across the columns, returning one row per geographic unit and one column per variable
 
 :::
 
-::: {.column width = "60%"}
+::: {.column width="60%"}
 
 ```{r wide-data}
 #| code-line-numbers: "|6"
