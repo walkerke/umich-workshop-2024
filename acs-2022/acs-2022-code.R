@@ -251,7 +251,7 @@ or_pums_filtered
 
 or_age_by_puma <- get_pums(
   variables = c("PUMA", "AGEP"),
-  state = "HI",
+  state = "OR",
   survey = "acs1",
   year = 2022
 )
