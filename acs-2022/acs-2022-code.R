@@ -204,6 +204,14 @@ ct_income <- get_acs(
 
 mapview(ct_income, zcol = "estimate")
 
+
+library(tigris)
+library(mapview)
+ct_tract_21 <- tracts("CT", cb = TRUE, year = 2021)
+ct_tract_22 <- tracts("CT", cb = TRUE, year = 2022)
+
+mapview(ct_tract_21) | mapview(ct_tract_22)
+
 library(tidycensus)
 
 or_pums <- get_pums(

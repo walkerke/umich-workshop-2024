@@ -225,7 +225,7 @@ income_table
 
 * Information on available geographies, and how to specify them, can be found [in the tidycensus documentation](https://walker-data.com/tidycensus/articles/basic-usage.html#geography-in-tidycensus-1)
 
-![](img/tidycensus_geographies.png)
+![](img/tidycensus_geographies.png){width=400}
 
 
 ---
