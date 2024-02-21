@@ -8,7 +8,7 @@ Workshop slides are available from the links below:
 
 * February 8, 2024: [Working with the 2022 American Community Survey with R and tidycensus](https://walker-data.com/umich-workshop-2024/acs-2022/)
 
-* February 22, 2024: Analyzing 2020 Decennial US Census Data in R
+* February 22, 2024: [Analyzing 2020 Decennial US Census Data in R](https://walker-data.com/umich-workshop-2024/census-2020)
 
 * March 7, 2024: Doing "GIS"" and making maps with US Census Data in R
 
