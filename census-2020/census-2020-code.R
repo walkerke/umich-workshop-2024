@@ -23,7 +23,7 @@ table_p2 <- get_decennial(
 
 table_p2
 
-tx_county_pop <- get_decennial(
+tx_population <- get_decennial(
   geography = "county",
   variables = "P1_001N",
   state = "TX",
@@ -31,7 +31,7 @@ tx_county_pop <- get_decennial(
   year = 2020
 )
 
-tx_county_pop
+tx_population
 
 matagorda_blocks <- get_decennial(
   geography = "block",

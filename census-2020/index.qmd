@@ -117,7 +117,7 @@ Available datasets from the 2020 US Census include:
 
 * RStudio: integrated development environment (IDE) for R developed by [Posit](https://posit.co/)
 
-* Posit Cloud: run RStudio with today's workshop pre-configured at https://posit.cloud/content/7549022
+* Posit Cloud: run RStudio with today's workshop pre-configured at <https://posit.cloud/content/7549022>
 
 
 ## Getting started with tidycensus
@@ -134,7 +134,7 @@ install.packages(c("tidycensus", "tidyverse", "mapview"))
 
 * tidycensus (and the Census API) can be used without an API key, but you will be limited to 500 queries per day
 
-* Power users: visit https://api.census.gov/data/key_signup.html to request a key, then activate the key from the link in your email. 
+* Power users: visit <https://api.census.gov/data/key_signup.html> to request a key, then activate the key from the link in your email. 
 
 * Once activated, use the `census_api_key()` function to set your key as an environment variable
 
@@ -253,7 +253,7 @@ class: middle, center, inverse
 ```{r query-by-state}
 #| code-line-numbers: "|4"
 
-tx_county_pop <- get_decennial(
+tx_population <- get_decennial(
   geography = "county",
   variables = "P1_001N",
   state = "TX",
@@ -265,7 +265,7 @@ tx_county_pop <- get_decennial(
 ---
 
 ```{r show-query-by-state}
-tx_county_pop
+tx_population
 ```
 
 ## Querying by state and county
@@ -743,6 +743,8 @@ saveWidget(m1@map, "iowa_over_65.html")
 ## Example usage of the DDHC-A File
 
 ```{r ddhca-example}
+#| code-line-numbers: "|3|6|7|8"
+
 mn_population_groups <- get_decennial(
   geography = "state",
   variables = "T01001_001N",
@@ -777,7 +779,7 @@ available_groups <- get_pop_groups(2020, "ddhca")
 
 * The DDHC-A File uses an "adaptive design" that makes certain tables available for specific geographies
 
-![]("img/adaptive_design.png"){width=800}
+![](img/adaptive_design.png){width=800}
 
 ## You may see this error...
 
