@@ -391,10 +391,10 @@ wfh_22_to_17 <- wfh_22 %>%
 library(mapview)
 library(leafsync)
 
-m20a <- mapview(wfh_22, zcol = "estimate", layer.name = "2020 geographies")
-m15a <- mapview(wfh_22_to_17, zcol = "estimate", layer.name = "2015 geographies")
+m22a <- mapview(wfh_22, zcol = "estimate", layer.name = "2020 geographies")
+m17a <- mapview(wfh_22_to_17, zcol = "estimate", layer.name = "2015 geographies")
 
-sync(m20a, m15a)
+sync(m22a, m17a)
 
 library(tigris)
 options(tigris_use_cache = TRUE)
