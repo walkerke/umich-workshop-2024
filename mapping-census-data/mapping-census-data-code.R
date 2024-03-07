@@ -7,7 +7,7 @@ Sys.setenv("MAPBOX_ACCESS_TOKEN" = "pk.eyJ1Ijoia3dhbGtlcnRjdSIsImEiOiJjbHRoYm12e
 
 wfh_tract_list <- read_rds("data/wfh_tract_list.rds")
 
-## install.packages(c("tidycensus", "tidyverse", "mapview", "rdeck", "ggspatial", "leafsync"))
+## install.packages(c("tidycensus", "tidyverse", "mapview", "ggspatial", "leafsync"))
 
 ## library(tidycensus)
 ## 
@@ -256,6 +256,10 @@ m2 <- mapview(san_diego_white, zcol = "estimate",
 mv2 <- sync(m1, m2)
 
 mv2
+
+## install.packages("remotes")
+## library(remotes)
+## install_github("qfes/rdeck")
 
 library(tidyverse)
 
