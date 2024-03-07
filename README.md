@@ -10,7 +10,7 @@ Workshop slides are available from the links below:
 
 * February 22, 2024: [Analyzing 2020 Decennial US Census Data in R](https://walker-data.com/umich-workshop-2024/census-2020)
 
-* March 7, 2024: Doing "GIS"" and making maps with US Census Data in R
+* March 7, 2024: [Doing "GIS"" and making maps with US Census Data in R](https://walker-data.com/umich-workshop-2024/mapping-census-data/)
 
 ---
 
@@ -21,12 +21,12 @@ Workshop slides are available from the links below:
 - Advanced users familiar with R and RStudio should clone the repository to their computers with the command `git clone https://github.com/walkerke/umich-workshop-2024.git`.  They should then install the following R packages, if not already installed:
 
 ```r
-pkgs <- c("tidycensus", "tidyverse", "mapview", "survey", "srvyr")
+pkgs <- c("tidycensus", "tidyverse", "mapview", "survey", "srvyr", "rdeck", "tigris")
 
 install.packages(pkgs)
 ```
 
-Experienced users should re-install __tidycensus__ to get the latest updates and ensure that all code used in the workshop will run.  
+Experienced users should re-install __tidycensus__ and __tigris__ to get the latest updates and ensure that all code used in the workshop will run.  
 
 Other packages used will be picked up as dependencies of these packages on installation. 
 
