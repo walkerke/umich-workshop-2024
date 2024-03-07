@@ -7,7 +7,7 @@ Sys.setenv("MAPBOX_ACCESS_TOKEN" = "pk.eyJ1Ijoia3dhbGtlcnRjdSIsImEiOiJjbHRoYm12e
 
 wfh_tract_list <- read_rds("data/wfh_tract_list.rds")
 
-## install.packages(c("tidycensus", "tidyverse", "mapview", "rdeck"))
+## install.packages(c("tidycensus", "tidyverse", "mapview", "rdeck", "ggspatial", "leafsync"))
 
 ## library(tidycensus)
 ## 

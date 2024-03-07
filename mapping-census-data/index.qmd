@@ -130,7 +130,7 @@ wfh_tract_list <- read_rds("data/wfh_tract_list.rds")
 * If you are using the Posit Cloud environment, these packages are already installed for you
 
 ```{r install-packages, eval = FALSE}
-install.packages(c("tidycensus", "tidyverse", "mapview", "rdeck"))
+install.packages(c("tidycensus", "tidyverse", "mapview", "rdeck", "ggspatial", "leafsync"))
 ```
 
 ## Optional: your Census API key
