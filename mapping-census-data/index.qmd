@@ -1084,8 +1084,8 @@ Nice work!  Now, you have a new follow-up from your boss:
 utah_wfh_compare <- get_acs(
   geography = "county",
   variables = c(
-    income17 = "CP03_2017_024",
-    income22 = "CP03_2022_024"
+    wfh17 = "CP03_2017_024",
+    wfh22 = "CP03_2022_024"
   ),
   state = "UT",
   year = 2022
